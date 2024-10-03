@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(217, 217, 217);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vw;
+    width: 100%;
+    font-size: 4vw;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(0, 34, 255);
+}
+
+main {
+    display: flex;
+    margin: 2vw;
+    padding: 2vw;
+    border-radius: 3vw;
+    background-color: white;
+}
+
+.fillDetails {
+    display: grid;
+    height: 30vw;
+    width: 49%;
+}
+
+.balance {
+    font-size: 2.5vw;
+    font-family: sans-serif;
+    margin: 0vw 1vw;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.bal {
+    margin-left: 2vw;
+    color: rgb(39, 189, 39);
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    font-family: monospace;
+    font-size: 600;
+}
+
+.money {
+    display: flex;
+    height: 6vw;
+    width: 93.2%;
+    margin: 1vw 1vw;
+}
+
+.income {
+    font-size: 1.5vw;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vw solid grey;
+    padding: 0.5vw;
+    gap: 1vw;
+}
+
+.income p,
+.expense p {
+    font-family: sans-serif;
+}
+
+.expense {
+    font-size: 1.5vw;
+    width: 50%;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    border: 0.1vw solid grey;
+    padding: 0.5vw;
+}
+
+.income .inin {
+    height: 2vw;
+    width: 50%;
+    font-family: monospace;
+    color: rgb(39, 189, 39);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.expense .exin {
+    height: 2vw;
+    width: 50%;
+    font-family: monospace;
+    color: rgb(255, 26, 26);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    font-size: 2.2vw;
+    font-family: sans-serif;
+    margin: 1vw 1vw;
+    font-weight: 600;
+}
+
+.input1 {
+    margin: 0vw 1vw;
+}
+
+.input1 input {
+    height: 2.5vw;
+    width: 90.1%;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.3vw;
+}
+
+.input2,
+.button {
+    margin: 0vw 1vw;
+}
+
+.input2 input {
+    height: 2.5vw;
+    width: 90.1%;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.3vw;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.button button {
+    height: 3vw;
+    width: 97.7%;
+    border-radius: 0.2vw;
+    border: none;
+    font-size: 1.5vw;
+    background-color: rgb(0, 96, 109);
+    color: white;
+    font-weight: 600;
+}
+
+.history {
+    width: 50%;
+}
+
+.transactions {
+    margin-left: 1vw;
+    margin-top: 0vw;
+    font-size: 2.5vw;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#history li {
+    height: 4vw;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(39, 189, 39);
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    width: 85%;
+    border-radius: 1vw;
+    padding: 0vw 3vw;
+    margin: 0.5vw 0vw 0vw 1vw;
+}
+
+.head{
+    display: flex;
+    gap: 13.5vw;
+}
+
+select{
+    height: 4vw;
+    width: 10vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+@media screen and (max-width:830px) {
+    main {
+        display: grid;
+    }
+
+    select{
+        width: 30vw;
+        height: 6vw;
+        font: 600;
+        font-size: 4vw;
+    }
+
+    .head{
+        align-items: center;
+        margin-bottom: 1.5vw;
+    }
+
+    .fillDetails {
+        width: 100%;
+        height: 70vw;
+        margin-bottom: 4vw;
+    }
+
+    .money {
+        width: 97.6%;
+        margin: 3vw 1vw;
+        height: 12vw;
+    }
+
+    .input1 input,
+    .input2 input {
+        width: 95.6%;
+        height: 10vw;
+        font-size: 3.3vw;
+        margin-bottom: 3vw;
+    }
+
+    .button button {
+        width: 99.8%;
+        height: 8vw;
+        font-size: 3.5vw;
+    }
+
+    #history li {
+        width: 91.5%;
+        height: 6vw;
+        font-size: 2.5vw;
+    }
+
+    .history {
+        width: 100%;
+    }
+
+    .transactions {
+        font-size: 5vw;
+        width: 100%;
+        margin-left: 2vw;
+    }
+
+    .balance {
+        font-size: 5vw;
+        margin-top: 1vw;
+        margin-left: 2vw;
+    }
+
+    .income,
+    .expense {
+        font-size: 4vw;
+        /* font-weight: 600; */
+        color: rgb(92, 92, 92);
+    }
+
+    .heading {
+        font-size: 5vw;
+        margin-left: 2vw;
+    }
+
+    header {
+        font-size: 10vw;
+        margin: 5vw 0vw;
+    }
+
+    #history li {
+        font-size: 4vw;
+        height: 8vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    .bal{
+        font-size: 5vw;
+        margin-left: 2vw;
+    }
+}
