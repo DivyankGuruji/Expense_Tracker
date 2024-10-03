@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Expense Tracker</div> 
+    </header>
+
+    <main>
+        <div class="fillDetails">
+            <div class="balance"> 
+                Available Balance:
+                <div class="bal"></div>
+            </div>
+            <div class="money">
+                <div class="income">
+                    <p>Income: </p>
+                    <div class="inin"></div>
+                </div>
+                <div class="expense">
+                    <p>Expense: </p>
+                    <div class="exin"></div>
+                </div>
+            </div>
+
+            <div class="head">
+                <div class="heading">New Transaction</div>
+            <div class="type">
+                <select id="types">
+                    <option value="Income" class="opt">Income</option>
+                    <option value="Expense" class="opt">Expense</option>
+                </select>
+            </div>
+            </div>
+            <div class="input1"><input type="text" placeholder="Enter Expense" class="used"></div>
+            <div class="input2"><input type="text" placeholder="Enter Amount" class="text"></div>
+            <div class="button"><button type="button" id="submit">ADD TRANSACTION</button></div>
+        </div>
+        <div class="history">
+            <div class="transactions">
+                <p>Transaction History</p>
+            </div>
+            <ul id="history">
+
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
